@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>상품 상세 - 굿즈샵</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <div class="brand">굿즈샵</div>
+  <nav id="nav"></nav>
+</header>
+<main>
+  <p><a href="products.html">← 상품 목록으로</a></p>
+  <section class="hero" id="hero" style="display:none">
+    <div class="hero-media">
+      <img id="detail-image" alt="">
+    </div>
+    <div class="hero-info">
+      <h1 id="detail-name"></h1>
+      <p class="price" id="detail-price"></p>
+      <p id="detail-description"></p>
+      <button class="primary" id="buy-btn">구매하기</button>
+      <p class="error" id="error-msg"></p>
+    </div>
+  </section>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="https://js.tosspayments.com/v2/standard"></script>
+<script src="js/supabaseClient.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/config.js"></script>
+<script src="js/product.js"></script>
+</body>
+</html>
