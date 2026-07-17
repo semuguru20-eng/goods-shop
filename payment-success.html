@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>결제 처리 중 - 굿즈샵</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <div class="brand">굿즈샵</div>
+  <nav id="nav"></nav>
+</header>
+<main>
+  <h1 id="title">결제를 확인하고 있습니다...</h1>
+  <div class="card">
+    <p class="message" id="detail"></p>
+    <p class="error" id="error-msg"></p>
+    <p><a href="mypage.html" id="mypage-link" style="display:none">내 결제내역 보기</a></p>
+  </div>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/supabaseClient.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/payment-result.js"></script>
+</body>
+</html>

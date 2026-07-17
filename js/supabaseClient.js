@@ -1,0 +1,4 @@
+const SUPABASE_URL = "https://bgybaskntgqxumuayoti.supabase.co";
+const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJneWJhc2tudGdxeHVtdWF5b3RpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQyOTEzMDMsImV4cCI6MjA5OTg2NzMwM30.-ENaxMEQ5AbIidECJLtT_RUybqjxqgTAMRitF68RzXc";
+
+const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);

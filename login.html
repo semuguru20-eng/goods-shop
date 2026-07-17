@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>로그인 - 굿즈샵</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <div class="brand">굿즈샵</div>
+  <nav id="nav"></nav>
+</header>
+<main>
+  <h1>회원가입 / 로그인</h1>
+  <div class="tabs">
+    <button id="tab-login" class="active">로그인</button>
+    <button id="tab-signup">회원가입</button>
+  </div>
+  <div class="card">
+    <form id="auth-form">
+      <input type="email" id="email" placeholder="이메일" required>
+      <input type="password" id="password" placeholder="비밀번호 (6자 이상)" required minlength="6">
+      <button type="submit" class="primary" id="submit-btn">로그인</button>
+    </form>
+    <p class="error" id="error-msg"></p>
+    <p class="message" id="info-msg"></p>
+  </div>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/supabaseClient.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>
