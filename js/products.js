@@ -1,5 +1,5 @@
-// TODO: 토스페이먼츠 개발자센터에서 발급받은 테스트 클라이언트 키(test_ck_...)로 교체하세요.
-const TOSS_CLIENT_KEY = "TOSS_CLIENT_KEY_PLACEHOLDER";
+// 토스페이먼츠 공식 샘플 저장소(tosspayments/tosspayments-sample)에 공개된 테스트 클라이언트 키.
+const TOSS_CLIENT_KEY = "test_ck_D5GePWvyJnrK0W0k6q8gLzN97Eoq";
 
 const grid = document.getElementById("product-grid");
 const errorMsg = document.getElementById("error-msg");
