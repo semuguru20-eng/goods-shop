@@ -33,7 +33,7 @@ document.getElementById("auth-form").addEventListener("submit", async (e) => {
   const password = document.getElementById("password").value;
 
   if (mode === "signup") {
-    const { error } = await supabase.auth.signUp({ email, password });
+    const { error } = await sb.auth.signUp({ email, password });
     if (error) {
       errorMsg.textContent = error.message;
       return;
@@ -41,7 +41,7 @@ document.getElementById("auth-form").addEventListener("submit", async (e) => {
     infoMsg.textContent = "회원가입 완료! 자동으로 로그인됩니다.";
     setTimeout(() => (window.location.href = "products.html"), 800);
   } else {
-    const { error } = await supabase.auth.signInWithPassword({ email, password });
+    const { error } = await sb.auth.signInWithPassword({ email, password });
     if (error) {
       errorMsg.textContent = error.message;
       return;

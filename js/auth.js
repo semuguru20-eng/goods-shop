@@ -1,7 +1,7 @@
 const ADMIN_EMAIL = "admin@admin.com";
 
 async function getSession() {
-  const { data } = await supabase.auth.getSession();
+  const { data } = await sb.auth.getSession();
   return data.session;
 }
 
@@ -41,7 +41,7 @@ async function renderNav() {
       <button id="logout-btn">로그아웃</button>
     `;
     document.getElementById("logout-btn").addEventListener("click", async () => {
-      await supabase.auth.signOut();
+      await sb.auth.signOut();
       window.location.href = "login.html";
     });
   } else {

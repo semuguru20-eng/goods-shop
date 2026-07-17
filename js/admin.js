@@ -9,7 +9,7 @@ async function loadAllOrders() {
   const session = await requireAdmin();
   if (!session) return;
 
-  const { data, error } = await supabase
+  const { data, error } = await sb
     .from("orders")
     .select("*")
     .order("created_at", { ascending: false });

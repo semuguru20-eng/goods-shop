@@ -15,7 +15,7 @@ async function confirmPayment() {
     return;
   }
 
-  const { data, error } = await supabase.functions.invoke("confirm-payment", {
+  const { data, error } = await sb.functions.invoke("confirm-payment", {
     body: { paymentKey, orderId, amount: Number(amount) },
   });
 

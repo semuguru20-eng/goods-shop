@@ -5,7 +5,7 @@ const grid = document.getElementById("product-grid");
 const errorMsg = document.getElementById("error-msg");
 
 async function loadProducts() {
-  const { data, error } = await supabase
+  const { data, error } = await sb
     .from("products")
     .select("*")
     .order("created_at", { ascending: true });
@@ -46,7 +46,7 @@ async function buyProduct(productId, products) {
 
   const tossOrderId = crypto.randomUUID();
 
-  const { error: insertError } = await supabase.from("orders").insert({
+  const { error: insertError } = await sb.from("orders").insert({
     user_id: session.user.id,
     user_email: session.user.email,
     product_id: product.id,

@@ -9,7 +9,7 @@ async function loadOrders() {
   const session = await requireLogin();
   if (!session) return;
 
-  const { data, error } = await supabase
+  const { data, error } = await sb
     .from("orders")
     .select("*")
     .eq("user_id", session.user.id)
