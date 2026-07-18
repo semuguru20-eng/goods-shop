@@ -19,7 +19,7 @@ async function loadProduct() {
     .single();
 
   if (error || !product) {
-    errorMsg.textContent = "상품 정보를 불러오지 못했습니다.";
+    errorMsg.textContent = "상품을 불러오지 못했습니다.";
     return;
   }
 
