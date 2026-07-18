@@ -2,9 +2,17 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>관리자 - 굿즈샵</title>
 <link rel="stylesheet" href="css/style.css">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#4d7fd9">
+<link rel="icon" href="icons/favicon.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="TuringShop">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 </head>
 <body>
 <header>
@@ -14,12 +22,14 @@
 <main>
   <h1>전체 결제내역 (관리자)</h1>
   <div class="card">
+    <div class="table-scroll">
     <table id="orders-table">
       <thead>
         <tr><th>구매자</th><th>주문명</th><th>금액</th><th>상태</th><th>주문일시</th></tr>
       </thead>
       <tbody id="orders-body"></tbody>
     </table>
+    </div>
     <p class="message" id="empty-msg" style="display:none">결제 내역이 없습니다.</p>
   </div>
 </main>
@@ -27,5 +37,7 @@
 <script src="js/supabaseClient.js"></script>
 <script src="js/auth.js"></script>
 <script src="js/admin.js"></script>
+<script src="js/pwa.js"></script>
+<script src="js/install-banner.js"></script>
 </body>
 </html>

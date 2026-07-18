@@ -17,6 +17,9 @@ https://semuguru20-eng.github.io/goods-shop/
 - 프론트엔드: 순수 HTML/CSS/JS (프레임워크 없음), GitHub Pages 정적 호스팅
 - 백엔드: Supabase (Auth, Postgres + RLS, Edge Functions)
 - 결제: 토스페이먼츠 SDK v2 (standard), 테스트 모드
+- PWA: 홈 화면 설치("TuringShop" 이름, 풀스크린 시도) + 오프라인 캐시 + 설치 유도
+  배너 + 푸시 알림(동의 UI + 테스트 발송 버튼까지 구현, 실제 이벤트 자동 연동은 아직
+  없음). 자세한 내용은 ARCH.md 참고.
 
 ## 계정 정보
 - 관리자: `admin@admin.com` (비밀번호는 별도 관리, 이 문서에는 기록하지 않음)
